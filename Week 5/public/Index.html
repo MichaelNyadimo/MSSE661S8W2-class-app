@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="width=device=width, initial-scale=1.0"/>
+    <title>Build fluid layout</title>
+    <link rel="stylesheet" href="./css/flexbox.css" />
+    <link rel="stylesheet" href="./css/styles.css"/>
+<body>
+    <div class="main"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="\Home.html">Home</a></li>
+              <li><a href="\About.html">About</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="center"></div>
+        <form novalidate></form>
+            <label for="username">
+                <form class="login_form" action="Home.html" method="post" name="form" onsubmit="return validated()"></form>
+                <span>Username:</span>
+                <input id="username" type="text" placeholder="Username"/>
+            </label>
+            <label for="password">
+                <span>Password:</span>
+                <input id="password" type="password" placeholder="Password"/>
+        
+            </label>
+        <button onclick="doLogin(event)">Submit</button>
+        <a href="./Register.html">Register</a>
+        </form>
+    </div>
+</div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="\Home.html">Home</a></li>
+                <li><a href="\About.html">About</a></li>    
+            </ul>
+            <a id="login" href="/login.html"></a>
+        </nav>
+        <p>Author: <a href="https://github.com/MichaelNyadimo/MSSE661S8W2-class-app">MichaelNyadimo</p>
+    </footer>
+</body>
+
+<script src="./src/api.config.js"></script>
+<script src="./src/simple-storage.js"></script>
+<script src="./src/service.js"></script>
+<script src="./src/build.js"></script>
+<script src="./src/service-helpers.js"></script>
+<script src="./src/route-guard.js"></script>
+<script src="./src/auth.service.js"></script>
+<script src="./src/app.js"></script>
